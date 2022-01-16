@@ -39,15 +39,16 @@ html
     right:0;
     padding: 0;
     margin: 0;
-    background-color: red; 
+    /* background-color: red;  */
 }
 
 
 /* BARS HOLDER */
 .bars-holder
 {
-    background-color: rgb(4, 0, 255);
+    /* background-color: rgb(4, 0, 255); */
     left:0;
+    right: 0;
     bottom: 0;
     min-height: 100vh;
 }
@@ -66,7 +67,7 @@ html
     padding: 0;
     box-sizing: border-box;
     height: var(--top-bar-height);
-    width: 100vw;
+    min-width: 100vw;
     overflow-x: auto;
     overflow-y:hidden;
 }
@@ -101,7 +102,7 @@ html
     left:0;
     min-height: calc(100vh - var(--top-bar-height)*2);
     width: 40px;
-    background-color: magenta;
+    background-color: rgb(255, 187, 0);
     margin:0;
     padding: 0;
 }
@@ -129,12 +130,12 @@ html
     overflow-x: auto;
     overflow-y:hidden;
     box-sizing: border-box;
-    background-color: rgb(255, 0, 170);
+    background-color: rgb(0, 255, 191);
     bottom:0;
     left: 0;
     right: 0;
     margin: 0;
     padding: 0;
     height: var(--top-bar-height);
-    width: 100vw;
+    min-width: 100vw;
 }
