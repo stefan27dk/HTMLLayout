@@ -58,6 +58,7 @@ html
 /* TOPBAR */
 .top-bar
 {
+    
     background-color: lime;
     top:0;
     left: 0;
@@ -66,6 +67,8 @@ html
     box-sizing: border-box;
     height: var(--top-bar-height);
     width: 100vw;
+    overflow-x: auto;
+    overflow-y:hidden;
 }
 
 
@@ -84,6 +87,7 @@ html
 /* CONTENT BAR CENTER */
 .content-bar
 {
+    word-wrap: break-word;
     background-color: darkcyan;
     width: 100%;
 }
@@ -93,7 +97,7 @@ html
 /* LEFTBAR */
 .left-bar
 {
-    align-items: flex-start;
+    word-wrap: break-word;
     left:0;
     min-height: calc(100vh - var(--top-bar-height)*2);
     width: 40px;
@@ -109,6 +113,7 @@ html
 /* RIGHT */
 .right-bar
 {
+    word-wrap: break-word;
     right:0;
     min-height: calc(100vh - var(--top-bar-height)*2);
     width: 40px;
@@ -120,13 +125,16 @@ html
 /* BOTTOM */
 .bottom-bar
 {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y:hidden;
+    box-sizing: border-box;
     background-color: rgb(255, 0, 170);
     bottom:0;
     left: 0;
     right: 0;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     height: var(--top-bar-height);
     width: 100vw;
 }
