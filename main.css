@@ -151,7 +151,7 @@ html
 
 /*BARS - CONTENTS - ############################################################################*/
 
-.top-bar-content
+.horizontal-bar-content
 {
     display: inline-table; 
     background-color: red;
@@ -163,7 +163,7 @@ html
 }
 
 
-.top-bar-content img 
+.horizontal-bar-content img 
 {
     max-height: 30px;
 }
