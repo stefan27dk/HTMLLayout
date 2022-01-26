@@ -2,7 +2,8 @@
 
 /* ROOT */
 :root{
- --top-bar-height: 75px;   
+ --horizontal-bars-height: 75px;   
+ 
 }
 
 
@@ -69,7 +70,7 @@ html
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: var(--top-bar-height);
+    min-height: var(--horizontal-bars-height);
     min-width: 100vw;
     overflow-x: auto;
     overflow-y:hidden;
@@ -104,7 +105,7 @@ html
 {
     word-wrap: break-word;
     left:0;
-    min-height: calc(100vh - var(--top-bar-height)*2);
+    min-height: calc(100vh - var(--horizontal-bars-height)*2);
     width: 40px;
     background-color: rgb(255, 187, 0);
     margin:0;
@@ -120,7 +121,7 @@ html
 {
     word-wrap: break-word;
     right:0;
-    min-height: calc(100vh - var(--top-bar-height)*2);
+    min-height: calc(100vh - var(--horizontal-bars-height)*2);
     width: 40px;
     background-color: rgb(0, 195, 255);
 }
@@ -138,7 +139,7 @@ html
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: var(--top-bar-height);
+    min-height: var(--horizontal-bars-height);
     min-width: 100vw;
     overflow-x: auto;
     overflow-y:hidden;
