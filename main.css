@@ -13,7 +13,7 @@
 }
 
 
-/* HTML */
+/* HTML =====================================================================================*/
 html
 {
     min-width: 100vw;
@@ -21,13 +21,15 @@ html
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    top:0;
+    bottom: 0;
     left:0;
     right:0;
     background-color: sandybrown;
 }
 
  
- /* MAIN BODY */
+ /* MAIN BODY ================================================================================ */
 .main-body
 {
     min-width: 100vw;
@@ -43,7 +45,7 @@ html
 }
 
 
-/* BARS HOLDER */
+/* BARS HOLDER - Parent of all Containers ===================================================== */
 .bars-holder
 {
     /* background-color: rgb(4, 0, 255); */
@@ -56,10 +58,9 @@ html
 
 
 
-/* TOPBAR */
+/* TOPBAR ======================================================================================*/
 .top-bar
 {
-    
     background-color: lime;
     top:0;
     left: 0;
@@ -74,7 +75,7 @@ html
 
 
 
-/* MIDDLEBARS-HOLDER */
+/* MIDDLEBARS-HOLDER ========================================================================== */
 .middle-bars-holder
 {
     left: 0;
@@ -85,7 +86,7 @@ html
 
 
 
-/* CONTENT BAR CENTER */
+/* CONTENT BAR CENTER ==========================================================================*/
 .content-bar
 {
     word-wrap: break-word;
@@ -95,7 +96,7 @@ html
 
 
 
-/* LEFTBAR */
+/* LEFTBAR =====================================================================================*/
 .left-bar
 {
     word-wrap: break-word;
@@ -111,7 +112,7 @@ html
 
 
 
-/* RIGHT */
+/* RIGHT =======================================================================================*/
 .right-bar
 {
     word-wrap: break-word;
@@ -123,7 +124,8 @@ html
 
 
 
-/* BOTTOM */
+
+/* BOTTOM ======================================================================================*/
 .bottom-bar
 {
     white-space: nowrap;
@@ -138,4 +140,20 @@ html
     padding: 0;
     height: var(--top-bar-height);
     min-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+/*BARS - CONTENTS - ############################################################################*/
+
+.top-bar-content
+{
+    
 }
