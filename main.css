@@ -2,7 +2,7 @@
 
 /* ROOT */
 :root{
- --top-bar-height: 40px;   
+ --top-bar-height: 75px;   
 }
 
 
@@ -53,6 +53,7 @@ html
     right: 0;
     bottom: 0;
     min-height: 100vh;
+    max-height: 100vh;
 }
 
 
@@ -61,16 +62,18 @@ html
 /* TOPBAR ======================================================================================*/
 .top-bar
 {
+    /* display: block; */
     background-color: lime;
     top:0;
     left: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: var(--top-bar-height);
+    min-height: var(--top-bar-height);
     min-width: 100vw;
     overflow-x: auto;
     overflow-y:hidden;
+    white-space : nowrap;
 }
 
 
@@ -128,32 +131,42 @@ html
 /* BOTTOM ======================================================================================*/
 .bottom-bar
 {
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y:hidden;
-    box-sizing: border-box;
     background-color: rgb(0, 255, 191);
-    bottom:0;
+    bottom:0; 
     left: 0;
     right: 0;
     margin: 0;
     padding: 0;
-    height: var(--top-bar-height);
+    box-sizing: border-box;
+    min-height: var(--top-bar-height);
     min-width: 100vw;
+    overflow-x: auto;
+    overflow-y:hidden;
+    white-space: nowrap;
 }
 
 
 
-
-
-
-
-
-
+  
 
 /*BARS - CONTENTS - ############################################################################*/
 
 .top-bar-content
 {
-    
+    display: inline-table; 
+    background-color: red;
+    max-width: 40px;
+    max-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 2px 10px 2px 10px;
 }
+
+
+.top-bar-content img 
+{
+    max-height: 30px;
+}
+
+
+ 
