@@ -3,7 +3,6 @@
 /* ROOT */
 :root{
  --horizontal-bars-height: 75px;   
- 
 }
 
 
@@ -103,26 +102,29 @@ html
 /* LEFTBAR =====================================================================================*/
 .left-bar
 {
-    word-wrap: break-word;
-    left:0;
-    min-height: calc(100vh - var(--horizontal-bars-height)*2);
-    width: 40px;
+    /* display:block; */
     background-color: rgb(255, 187, 0);
+    max-height: calc(100vh - var(--horizontal-bars-height)*2);
+    min-width: min-content;
+    max-width: 170px;
+    left:0;
     margin:0;
-    padding: 0;
+    padding: 12px;
+    word-wrap: break-word;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-
-
-
-
+ 
 /* RIGHT =======================================================================================*/
 .right-bar
 {
     word-wrap: break-word;
     right:0;
     min-height: calc(100vh - var(--horizontal-bars-height)*2);
-    width: 40px;
+    width: fit-content;
     background-color: rgb(0, 195, 255);
 }
 
@@ -150,19 +152,19 @@ html
 
   
 
-/*BARS - CONTENTS - ############################################################################*/
-
+/*HORIZONTAL BARS - CONTENT - ############################################################################*/
 .horizontal-bar-content
 {
     display: inline-table; 
     background-color: red;
-    max-width: 40px;
-    max-height: 50px;
+    /* max-width: 40px; */
+    /* max-height: 50px; */
     text-align: center;
     white-space: nowrap;
     margin: 2px 10px 2px 10px;
 }
 
+ 
 
 .horizontal-bar-content img 
 {
@@ -170,15 +172,35 @@ html
 }
 
 
- 
+
 
 /*Centerize Container ==========================================================================*/
-
 .centerize-container
 {
     margin: 0px auto 0px auto;
     width:fit-content;
 }
+
+
+
+/*VERTICAL BARS - CONTENT - ############################################################################*/
+.vertical-bar-content
+{
+    display: block;
+    background-color: rgb(255, 255, 199);
+    margin: 35px auto 35px auto;
+    text-align: center;
+    /* white-space : nowrap; */
+    width:fit-content;
+}
+
+
+.vertical-bar-content img 
+{
+    max-height: 30px;
+}
+ 
+
 
 
 
