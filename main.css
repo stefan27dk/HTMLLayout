@@ -62,7 +62,7 @@ html
 /* TOPBAR ======================================================================================*/
 .top-bar
 {
-    /* display: block; */
+    /* display:inline-block; */
     background-color: lime;
     top:0;
     left: 0;
@@ -167,6 +167,18 @@ html
 {
     max-height: 30px;
 }
+
+
+ 
+
+/*Centerize Container ==========================================================================*/
+
+.centerize-container
+{
+    margin: 0px auto 0px auto;
+    width:fit-content;
+}
+
 
 
  
