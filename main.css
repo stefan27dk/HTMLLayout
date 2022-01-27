@@ -105,8 +105,8 @@ html
     /* display:block; */
     background-color: rgb(255, 187, 0);
     max-height: calc(100vh - var(--horizontal-bars-height)*2);
-    min-width: min-content;
-    max-width: 170px;
+    min-width:min-content;
+    max-width: 150px;
     left:0;
     margin:0;
     padding: 12px;
