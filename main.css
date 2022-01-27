@@ -92,9 +92,16 @@ html
 /* CONTENT BAR CENTER ==========================================================================*/
 .content-bar
 {
-    word-wrap: break-word;
-    background-color: darkcyan;
     width: 100%;
+    max-height: calc(100vh - var(--horizontal-bars-height)*2);
+    background-color: darkcyan;
+    word-wrap: break-word;
+    padding:6px;
+ 
+    word-wrap: break-word;
+    /* text-align: center; */
+    overflow: auto;
+    box-sizing: border-box;
 }
 
 
