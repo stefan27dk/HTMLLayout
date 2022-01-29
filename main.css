@@ -222,7 +222,9 @@ html
   height: 50px;
   cursor:pointer;
   border: none;
+  /* top: 50%; */
   top: 50%;
+ transform:translateY(-50%);
 }
 
 
@@ -240,11 +242,16 @@ html
 {
   background-color: transparent;
   background-image: url('/img/double-arrow-right.png');
-  background-size: cover;
+  background-size: cover; 
 }
 
 
 .translate-x-minus-70px
 {
     transform:translateX(-70px);
+}
+
+.translate-y-0px 
+{
+    transform:translateY(0);
 }
