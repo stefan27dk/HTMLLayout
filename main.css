@@ -41,6 +41,7 @@ html
     right:0;
     padding: 0;
     margin: 0;
+    overflow: hidden;
     /* background-color: red;  */
 }
 
@@ -96,10 +97,8 @@ html
     max-height: calc(100vh - var(--horizontal-bars-height)*2);
     background-color: darkcyan;
     word-wrap: break-word;
-    padding:6px;
- 
-    word-wrap: break-word;
-    /* text-align: center; */
+    margin: 0; 
+    padding:12px;
     overflow: auto;
     box-sizing: border-box;
 }
