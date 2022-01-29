@@ -90,8 +90,8 @@ html
 
 
 /* CONTENT BAR CENTER ==========================================================================*/
-.content-bar
-{
+#content-bar
+{ 
     width: 100%;
     max-height: calc(100vh - var(--horizontal-bars-height)*2);
     background-color: darkcyan;
@@ -107,7 +107,7 @@ html
 
 
 /* LEFTBAR =====================================================================================*/
-.left-bar
+#left-bar
 {
     /* display:block; */
     background-color: rgb(255, 187, 0);
@@ -126,7 +126,7 @@ html
 
  
 /* RIGHT =======================================================================================*/
-.right-bar
+#right-bar
 { 
     background-color: rgb(0, 195, 255);
     max-height: calc(100vh - var(--horizontal-bars-height)*2);
@@ -215,7 +215,37 @@ html
 }
  
 
+/*TOGGLE - Vertical - Bars======================================================================================*/
+.button-toggle-vertical-bar
+{ 
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor:pointer;
+  border: none;
+  top: 50%;
+}
 
 
 
- 
+.left-bar-arrow
+{
+  background-color: transparent;
+  background-image: url('/img/double-arrow-left.png');
+  background-size: cover;
+}
+
+
+
+.right-bar-arrow
+{
+  background-color: transparent;
+  background-image: url('/img/double-arrow-right.png');
+  background-size: cover;
+}
+
+
+.translate-x-minus-70px
+{
+    transform:translateX(-70px);
+}
