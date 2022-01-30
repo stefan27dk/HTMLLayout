@@ -1,7 +1,7 @@
 
-// Functions
+// FUNCTIONS ###################################################################
 
-// TOGGLE-LEFT-BAR
+// TOGGLE-VERTICAL-BARS ========================================================
 toggleVerticalBar = (e) =>
 { 
     let current = e.currentTarget;
@@ -22,14 +22,32 @@ toggleVerticalBar = (e) =>
 
  
 
-// Event Listeners
+
+
+
+// // SCROLLING HORIZONTALY =====================================================
+scrollHorizontal = (e) =>
+{
+    e.preventDefault(); 
+    e.currentTarget.scrollLeft += e.deltaY;
+}
+
+
+
+
+
+// Event Listeners ##############################################################
 // LEFTBAR
 document.getElementById('toggleLeftBarButton').addEventListener("click", toggleVerticalBar);
 
 //RIGHTBAR
 document.getElementById('toggleRightBarButton').addEventListener("click", toggleVerticalBar);
 
+// TOPBAR
+document.getElementById('top-bar').addEventListener("wheel", scrollHorizontal);
 
+// BOTTOMBAR
+document.getElementById('bottom-bar').addEventListener("wheel", scrollHorizontal);
 
 
 

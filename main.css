@@ -61,7 +61,7 @@ html
 
 
 /* TOPBAR ======================================================================================*/
-.top-bar
+#top-bar
 {
     /* display:inline-block; */
     background-color: lime;
@@ -145,7 +145,7 @@ html
 
 
 /* BOTTOM ======================================================================================*/
-.bottom-bar
+#bottom-bar
 {
     background-color: rgb(0, 255, 191);
     bottom:0; 
